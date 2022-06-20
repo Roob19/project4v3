@@ -5,12 +5,12 @@ const express = require('express');
 const path = require('path');
 const favicon = require('serve-favicon');
 const logger = require('morgan');
-const bodyParser = require('body-parser');
+// const bodyParser = require('body-parser');
 const cors = require('cors');
 
 
 const app = express();
-const breweryRoutes = require('./routes/api/breweries')
+// const breweryRoutes = require('./routes/api/breweries')
 
 app.use(cors());
 app.use(logger('dev'));
@@ -18,8 +18,8 @@ app.use(express.json());
 app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')));
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.use(bodyParser.json({ limit: "30mb", extended: true }));
-app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
+// app.use(bodyParser.json({ limit: "30mb", extended: true }));
+// app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 app.get('/*', function(req, res) {
@@ -27,7 +27,7 @@ app.get('/*', function(req, res) {
 });
 
 // routes
-app.use('/api/breweries', breweryRoutes)
+// app.use('/api/breweries', breweryRoutes)
 
 
 const port = process.env.PORT || 3001;
