@@ -14,7 +14,7 @@ const BreweryCard = ({ brewery:
         website_url
     } }) => {
         const handleClick = () => {
-            window.open({website_url});
+            window.open(website_url);
         }
         return (
             <div className='brewery' key={id} onClick={handleClick}>
