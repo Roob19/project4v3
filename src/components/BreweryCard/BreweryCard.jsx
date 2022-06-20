@@ -14,7 +14,7 @@ const BreweryCard = ({ brewery:
         website_url
     } }) => {
         const handleClick = () => {
-            window.open({website_url});
+            window.open(website_url);
         }
         return (
             <div className='brewery' key={id} onClick={handleClick}>
@@ -25,8 +25,9 @@ const BreweryCard = ({ brewery:
                     <img src='https://thumbs.dreamstime.com/z/beer-logo-cap-vector-illustration-emblem-brewery-design-dark-background-95602710.jpg' alt='stockimage' />
                 </div>
                 <div>
-                    <span>{city}, {state}</span>
                     <h3>{name}</h3>
+                    <span>{street} </span>
+                    <span> {city}, {state} {postal_code}</span>
                 </div>
             </div>
         )

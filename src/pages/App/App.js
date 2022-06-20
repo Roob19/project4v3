@@ -27,14 +27,14 @@ const App = () => {
     setBeerByCity(data);
   }
 
-  useEffect(() => {
-    searchZip(95742);
-  }, []);
+  // useEffect(() => {
+  //   searchZip(95742);
+  // }, []);
 
   return (
     <div className="app">
       <h1>Project4v3</h1>
-      <div className="search">
+      {/* <div className="search">
         <input
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
@@ -45,7 +45,7 @@ const App = () => {
           alt="search-zip"
           onClick={() => searchZip(searchTerm)}
         />
-      </div>
+      </div> */}
       <div className='search'>
         <input 
           value={searchTerm}
@@ -59,7 +59,7 @@ const App = () => {
         />
       </div>
 
-      {beerByZip?.length > 0 ? (
+      {/* {beerByZip?.length > 0 ? (
         <div className="container">
           {beerByZip.map((brewery) => (
             <BreweryCard brewery={brewery} />
@@ -69,7 +69,7 @@ const App = () => {
         <div className='empty'>
           <h2>No breweries found</h2>
         </div>
-      )}
+      )} */}
 
       {beerByCity?.length > 0 ? (
         <div className="container">
