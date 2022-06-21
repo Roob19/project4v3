@@ -1,3 +1,4 @@
+<br></br>
 [project4](https://sei-project4.herokuapp.com/)
 <br></br>
 <hr></hr>
@@ -44,7 +45,7 @@ This app allows a viewer to enter a city by name and the app will call an API fr
 <hr></hr>
 <br></br>
 
-<h3>App made and designed with: </h3>
+<h3>App designed and created with: </h3>
 
 >
 >> Mongoose
