@@ -3,8 +3,8 @@ import BreweryCard from '../../components/BreweryCard/BreweryCard';
 import './App.css';
 import SearchIcon from './search.svg';
 
-const apiZip = 95742;
-const apiCity = 'rancho_cordova';
+// const apiZip = 95742;
+// const apiCity = 'rancho_cordova';
 // const API_ZIP_URL = `https://api.openbrewerydb.org/breweries?by_postal=${apiZip}&sort=type,updated_at:asc`;
 // const API_CITY_URL = `https://api.openbrewerydb.org/breweries?by_city=${apiCity}&sort=type,updated_at:asc`;
 
